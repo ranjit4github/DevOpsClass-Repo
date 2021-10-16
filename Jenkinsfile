@@ -4,6 +4,7 @@ pipeline {
         stage('Build') { 
             steps {
                 echo "Hello Jenkins.. Building in progress..."
+                echo "Working on Dev1.1"
             }
         }
         stage('Test') { 

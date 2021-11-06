@@ -10,9 +10,6 @@ pipeline{
             steps{
 		echo "This is the Testing stage"
             }
-            steps{
-		echo "I'm extra step"
-            }
 
         }
         stage('Delivery'){

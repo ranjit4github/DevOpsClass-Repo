@@ -12,10 +12,5 @@ pipeline{
             }
 
         }
-        stage('Delivery'){
-            steps{
-                echo "Waiting for delivery....."
-            }
-        }
     }
 }

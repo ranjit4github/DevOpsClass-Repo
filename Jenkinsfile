@@ -1,3 +1,5 @@
+@Library('Jenkins-sharedLibrary') _
+
 pipeline{
 	agent any
     stages{
@@ -8,12 +10,12 @@ pipeline{
 	    }
         stage('Build'){
             steps{
-		echo "This the Build stage"
+		build()
             }
         }
-        stage('Test'){
+        stage('Deploy'){
             steps{
-		echo "This is the Testing stage"
+		deploy()
             }
 
         }

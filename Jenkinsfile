@@ -10,12 +10,16 @@ pipeline{
 	    }
         stage('Build'){
             steps{
-		build()
+		    script{
+			    build()
+		    }
             }
         }
         stage('Deploy'){
             steps{
-		deploy()
+		    script{
+			    deploy()
+		    }
             }
 
         }

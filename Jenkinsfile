@@ -1,11 +1,13 @@
-@Library('Jenkins-sharedLibrary') _
+@Library('My-Jenkins-SharedLibrary') _
 
 pipeline{
 	agent any
     stages{
 	    stage('Code Scanning'){
 		    steps{
-		    	echo "I'm scanning the code..."
+			    script{
+			    	scan()
+			    }
 		    }
 	    }
         stage('Build'){
